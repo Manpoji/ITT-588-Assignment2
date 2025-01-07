@@ -1,0 +1,148 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header div:first-child {
+  background: #FFD700; 
+  padding: 20px;
+}
+
+header div:last-child {
+  background: #0055A4; 
+  padding: 10px;
+}
+
+header {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFD700;
+}
+
+main {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 48px;
+  padding: 32px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+h2 {
+  color: #0055A4; 
+  margin-bottom: 24px;
+}
+
+
+.harumanis-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin: 32px 0;
+}
+
+.harumanis-card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.harumanis-card:hover {
+  transform: translateY(-5px);
+}
+
+.harumanis-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.harumanis-card p {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #0055A4;;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00006b; 
+}
+
+footer {
+  background-color: #0055A4;; 
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      gap: 16px;
+  }
+  
+  .harumanis-gallery {
+      grid-template-columns: 1fr;
+  }
+}
